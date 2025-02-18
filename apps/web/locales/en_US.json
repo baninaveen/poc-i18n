@@ -1,0 +1,6 @@
+{
+  "btnTitle": "Create a new account",
+  "submitBtn": "Submit",
+  "formLable": "You want to join the team? <brand>Join now</brand>",
+  "callDescription": "We'll call you at <strong>{{phoneNumber}}</strong> <editPhoneLink>(Edit)</editPhoneLink>. Follow the prompts to get the {phoneotpdigit}-digit-code"
+}

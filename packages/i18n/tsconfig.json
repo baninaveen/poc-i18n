@@ -1,0 +1,16 @@
+{
+  "extends": "@optum/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@optum/i18n": ["./packages/i18n/src"],
+      "@optum/i18n/*": ["./packages/i18n/src/*"]
+    }
+  },
+  "include": ["src", "**/*.ts", "**/*.d.ts", "**/*.tsx", ".i18nrc.ts"]
+}
