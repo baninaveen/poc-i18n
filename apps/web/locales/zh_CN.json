@@ -1,6 +1,6 @@
 {
   "btnTitle": "创建新账户",
-  "callDescription": "我们会在 <strong>{{phoneNumber}}</strong> 给您打电话 <editPhoneLink>(编辑)</editPhoneLink>。请按照提示输入 {phoneotpdigit} 位数字验证码",
+  "callDescription": "我们会在 <strong>{{phoneNumber}}</strong> 给您打电话 <editPhoneLink>(编辑)</editPhoneLink>。请按照提示获取 {phoneotpdigit} 位数字验证码",
   "formLable": "您想加入团队吗？<brand>立即加入</brand>",
   "submitBtn": "提交"
 }

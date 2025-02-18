@@ -1,6 +1,6 @@
 {
   "btnTitle": "新しいアカウントを作成",
-  "callDescription": "私たちは <strong>{{phoneNumber}}</strong> にお電話します <editPhoneLink>(編集)</editPhoneLink>。指示に従って {phoneotpdigit} 桁のコードを取得してください",
+  "callDescription": "<strong>{{phoneNumber}}</strong> にお電話します <editPhoneLink>(編集)</editPhoneLink>。指示に従って {phoneotpdigit} 桁のコードを取得してください。",
   "formLable": "チームに参加したいですか？ <brand>今すぐ参加</brand>",
   "submitBtn": "送信"
 }
