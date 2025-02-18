@@ -9,8 +9,7 @@ export const schema: ConfigSchema = {
     type: "string",
   },
   openaiToken: {
-    default:
-      "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",
+    default: "",
     type: "string",
   },
 };
