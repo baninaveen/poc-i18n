@@ -1,6 +1,6 @@
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { ChatOpenAI } from "@langchain/openai";
-import { alert } from "@lobehub/cli-ui";
+import { log } from "@clack/prompts";
 // @ts-ignore
 import dJSON from "dirty-json";
 
@@ -74,12 +74,12 @@ export class TranslateLocale {
       try {
         return JSON.parse(result as string);
       } catch {
-        alert.warn("parse fail, try to use dirty json");
+        log.warn("parse fail, try to use dirty json");
         try {
           return dJSON.parse(result as string);
         } catch {
-          alert.error("i18n dirty json fail");
-          alert.error(result as string, true);
+          log.error("i18n dirty json fail");
+          log.error(result as string);
         }
       }
     } catch (error) {
@@ -88,6 +88,6 @@ export class TranslateLocale {
   }
 
   private handleError(error?: any) {
-    alert.error(`Translate failed, ${error || "please check your network or try again..."}`, true);
+    log.error(`Translate failed, ${error || "please check your network or try again..."}`);
   }
 }

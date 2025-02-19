@@ -1,4 +1,4 @@
-import { alert } from "@lobehub/cli-ui";
+import { log } from "@clack/prompts";
 import chalk from "chalk";
 import dotenv from "dotenv";
 import { merge } from "lodash-es";
@@ -20,7 +20,7 @@ const getOpenAIProxyUrl = () => process.env.OPENAI_PROXY_URL || getConfig("apiBa
 const getConfigFile = (): I18nConfig => {
   const config: any = explorer.getConfigFile();
   // @ts-ignore
-  if (!config) return alert.error(`Can't find ${chalk.bold.yellow("config")}`, true);
+  if (!config) return log.error(`Can't find ${chalk.bold.yellow("config")}`);
   return merge(DEFAULT_CONFIG, config);
 };
 

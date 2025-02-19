@@ -1,4 +1,4 @@
-import { alert } from "@lobehub/cli-ui";
+import { log } from "@clack/prompts";
 import chalk from "chalk";
 import { globSync } from "glob";
 import { existsSync } from "node:fs";
@@ -14,7 +14,7 @@ export const getEntryFile = (config: I18nConfig): LocaleObj | void => {
     const entryPath = resolve("./", config.entry);
     const isExist = existsSync(entryPath);
     if (!isExist) {
-      alert.error(`Can't find ${chalk.bold.yellow(config.entry)} in dir`, true);
+      log.error(`Can't find ${chalk.bold.yellow(config.entry)} in dir`);
     }
     const entry = readJSON(entryPath) as LocaleObj;
 
@@ -35,7 +35,7 @@ export const getEntryFolderFiles = (config: I18nConfig): LocaleFolderObj | void 
   }
 
   if (Object.keys(obj).length === 0) {
-    alert.error(`Can't find .json files in ${chalk.bold.yellow(entryPath)}`, true);
+    log.error(`Can't find .json files in ${chalk.bold.yellow(entryPath)}`);
     return;
   }
 

@@ -30,11 +30,7 @@ program
 
 program.command("locale", { isDefault: true }).action(async () => {
   const options: Flags = program.opts();
-  if (options.option) {
-    console.log("options.option", options.option);
-  } else {
-    if (options.config) explorer.loadCustomConfig(options.config);
-    await new TranslateLocale().start();
-  }
+  if (options.config) explorer.loadCustomConfig(options.config);
+  await new TranslateLocale().start();
 });
 program.parse();

@@ -36,10 +36,10 @@
   "author": "Banisetti Naveen Kumar",
   "license": "UNLICENSED",
   "dependencies": {
+    "@clack/prompts": "^0.10.0",
     "@inkjs/ui": "^2.0.0",
     "@langchain/core": "^0.3.40",
     "@langchain/openai": "^0.4.4",
-    "@lobehub/cli-ui": "^1.10.1",
     "@optum/eslint-config": "workspace:*",
     "@optum/typescript-config": "workspace:*",
     "@types/json-stable-stringify": "^1.2.0",
